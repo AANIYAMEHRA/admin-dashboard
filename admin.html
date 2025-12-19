@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/admin-style.css">
+</head>
+<body>
+    <div class="admin-panel-container">
+        <div class="container">
+            <h1 class="admin-title">Admin Panel</h1>
+
+            <!-- Tabs Navigation -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="projects">Project Management</button>
+                <button class="tab-btn" data-tab="clients">Client Management</button>
+                <button class="tab-btn" data-tab="contacts">Contact Form Details</button>
+                <button class="tab-btn" data-tab="newsletter">Newsletter Subscriptions</button>
+            </div>
+
+            <!-- Project Management Tab -->
+            <div id="projects" class="tab-content active">
+                <div id="projectMessage" class="alert alert-msg hidden"></div>
+                
+                <button class="add-btn" id="addProjectBtn">+ Add Project</button>
+
+                <!-- Add Project Modal -->
+                <div id="projectModal" class="modal hidden">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Add New Project</h2>
+                            <button class="close-btn" data-modal="projectModal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="projectForm" class="form">
+                                <div class="form-group">
+                                    <label>Project Name</label>
+                                    <input type="text" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Project Description</label>
+                                    <textarea name="description" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Project Image</label>
+                                    <input type="file" name="image" accept="image/*">
+                                </div>
+                                <button type="submit" class="submit-btn">Add Project</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Table -->
+                <div class="table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="projectsTable">
+                            <tr><td colspan="3" class="loading">Loading... </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Client Management Tab -->
+            <div id="clients" class="tab-content">
+                <div id="clientMessage" class="alert alert-msg hidden"></div>
+                
+                <button class="add-btn" id="addClientBtn">+ Add Client</button>
+
+                <!-- Add Client Modal -->
+                <div id="clientModal" class="modal hidden">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Add New Client</h2>
+                            <button class="close-btn" data-modal="clientModal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="clientForm" class="form">
+                                <div class="form-group">
+                                    <label>Client Name</label>
+                                    <input type="text" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Designation</label>
+                                    <input type="text" name="designation" placeholder="e.g., CEO, Web Developer" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Client Description</label>
+                                    <textarea name="description" rows="4" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Client Image</label>
+                                    <input type="file" name="image" accept="image/*">
+                                </div>
+                                <button type="submit" class="submit-btn">Add Client</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clients Table -->
+                <div class="table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Client Name</th>
+                                <th>Designation</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="clientsTable">
+                            <tr><td colspan="4" class="loading">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Contact Form Details Tab -->
+            <div id="contacts" class="tab-content">
+                <div class="table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Email Address</th>
+                                <th>Mobile Number</th>
+                                <th>City</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contactsTable">
+                            <tr><td colspan="5" class="loading">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Newsletter Subscriptions Tab -->
+            <div id="newsletter" class="tab-content">
+                <div class="table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Email Address</th>
+                                <th>Subscription Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="newsletterTable">
+                            <tr><td colspan="3" class="loading">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin-script.js"></script>
+</body>
+</html>

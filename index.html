@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name - Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="container">
+            <h1 class="company-name">Company Name</h1>
+        </div>
+    </header>
+
+    <!-- Our Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Our Projects</h2>
+            <div id="projectsContainer" class="projects-grid">
+                <!-- Projects loaded here via JavaScript -->
+                <div class="loading">Loading projects...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Clients Section -->
+    <section class="clients-section">
+        <div class="container">
+            <h2 class="section-title">Happy Clients</h2>
+            <div id="clientsContainer" class="clients-grid">
+                <!-- Clients loaded here via JavaScript -->
+                <div class="loading">Loading clients...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="contact-form-container">
+                    <h2 class="contact-title">Get a Free Consultation</h2>
+                    
+                    <div id="contactMessage" class="alert hidden"></div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                placeholder="Full Name" 
+                                class="form-input" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter Email Address" 
+                                class="form-input" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <input 
+                                type="tel" 
+                                id="mobile" 
+                                name="mobile" 
+                                placeholder="Mobile Number" 
+                                class="form-input" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <input 
+                                type="text" 
+                                id="city" 
+                                name="city" 
+                                placeholder="City" 
+                                class="form-input" 
+                                required
+                            >
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-bar">
+                <div class="navbar-nav-items">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Services</a>
+                    <a href="#" class="nav-link">Projects</a>
+                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </div>
+
+                <div class="newsletter-center">
+                    <span class="newsletter-label">Subscribe Us</span>
+                </div>
+
+                <div class="newsletter-form-wrapper">
+                    <div id="newsletterMessage" class="alert alert-light hidden"></div>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <div class="newsletter-input-group">
+                            <input 
+                                type="email" 
+                                id="newsletterEmail" 
+                                placeholder="Enter Email Address" 
+                                class="newsletter-input" 
+                                required
+                            >
+                            <button type="submit" class="subscribe-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
