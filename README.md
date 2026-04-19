@@ -66,7 +66,7 @@ This project reflects implementation of real-world enterprise dashboard developm
 ## 📂 Project Structure
 
 
-admin-dashboard/
+admin-dashboard/<br>
 │
 ├── frontend/<br>
 ├── backend/<br>
@@ -79,22 +79,22 @@ admin-dashboard/
 
 ## 🧠 System Architecture Workflow
 
-React Frontend UI<br>
-│
-▼
-REST API Communication<br>
-│
-▼
-Spring Boot Backend<br>
-│
-▼
-Service Layer Processing<br>
-│
-▼
-Repository Layer<br>
-│
-▼
-MySQL Database<br>
+React Frontend UI
+│<br>
+▼<br>
+REST API Communication
+│<br>
+▼<br>
+Spring Boot Backend
+│<br>
+▼<br>
+Service Layer Processing
+│<br>
+▼<br>
+Repository Layer
+│<br>
+▼<br>
+MySQL Database
 
 
 ## ✨ Key Features
