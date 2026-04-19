@@ -79,22 +79,22 @@ admin-dashboard/<br>
 
 ## 🧠 System Architecture Workflow
 
-React Frontend UI
+React Frontend UI<br>
 │<br>
 ▼<br>
-REST API Communication
+REST API Communication<br>
 │<br>
 ▼<br>
-Spring Boot Backend
+Spring Boot Backend<br>
 │<br>
 ▼<br>
-Service Layer Processing
+Service Layer Processing<br>
 │<br>
 ▼<br>
-Repository Layer
+Repository Layer<br>
 │<br>
 ▼<br>
-MySQL Database
+MySQL Database<br>
 
 
 ## ✨ Key Features
