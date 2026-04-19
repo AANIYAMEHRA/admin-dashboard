@@ -68,33 +68,33 @@ This project reflects implementation of real-world enterprise dashboard developm
 
 admin-dashboard/
 │
-├── frontend/
-├── backend/
-├── database/
-├── banner.png
-├── architecture.png
-└── README.md
+├── frontend/<br>
+├── backend/<br>
+├── database/<br>
+├── banner.png<br>
+├── architecture.png<br>
+└── README.md<br>
 
 
 
 ## 🧠 System Architecture Workflow
 
-React Frontend UI
+React Frontend UI<br>
 │
 ▼
-REST API Communication
+REST API Communication<br>
 │
 ▼
-Spring Boot Backend
+Spring Boot Backend<br>
 │
 ▼
-Service Layer Processing
+Service Layer Processing<br>
 │
 ▼
-Repository Layer
+Repository Layer<br>
 │
 ▼
-MySQL Database
+MySQL Database<br>
 
 
 ## ✨ Key Features
