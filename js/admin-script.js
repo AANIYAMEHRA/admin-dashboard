@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
   loadNewsletters();
 });
 
+
+
+
 /* ================= TABS ================= */
 function setupTabs() {
   const tabButtons = document.querySelectorAll(".tab-btn");
@@ -34,6 +37,9 @@ function setupTabs() {
     });
   });
 }
+
+
+
 
 /* ================= MODALS ================= */
 function setupModals() {
@@ -60,6 +66,8 @@ function setupModals() {
     });
   });
 }
+
+
 
 /* ================= PROJECT FORM ================= */
 function setupProjectForm() {
@@ -94,6 +102,8 @@ function setupProjectForm() {
   });
 }
 
+
+
 /* ================= CLIENT FORM ================= */
 function setupClientForm() {
   const form = document.getElementById("clientForm");
@@ -127,6 +137,8 @@ function setupClientForm() {
   });
 }
 
+
+
 /* ================= LOAD PROJECTS ================= */
 function loadProjects() {
   const table = document.getElementById("projectsTable");
@@ -148,6 +160,8 @@ function loadProjects() {
         : `<tr><td colspan="3">No projects found</td></tr>`;
     });
 }
+
+
 
 /* ================= LOAD CLIENTS ================= */
 function loadClients() {
@@ -171,6 +185,8 @@ function loadClients() {
         : `<tr><td colspan="4">No clients found</td></tr>`;
     });
 }
+
+
 
 /* ================= LOAD CONTACTS ================= */
 function loadContacts() {
@@ -204,6 +220,8 @@ function loadNewsletters() {
     });
 }
 
+
+
 /* ================= DELETE ================= */
 const deleteProject = id =>
   confirm("Delete project?") &&
@@ -220,6 +238,8 @@ const deleteContact = id =>
 const deleteNewsletter = id =>
   confirm("Delete subscription?") &&
   fetch(`${API_BASE_URL}/newsletter/${id}`, { method: "DELETE" }).then(loadNewsletters);
+
+
 
 /* ================= MESSAGE ================= */
 function showMessage(id, text, cls) {
