@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     loadNewsletters();
 });
 
+
+
+
 // ============== TAB FUNCTIONALITY ==============
 function setupTabs() {
     const tabButtons = document.querySelectorAll('. tab-btn');
@@ -37,6 +40,9 @@ function setupTabs() {
         });
     });
 }
+
+
+
 
 // ============== MODAL FUNCTIONALITY ==============
 function setupModals() {
@@ -81,6 +87,9 @@ function setupModals() {
     });
 }
 
+
+
+
 // ============== PROJECT FORM ==============
 function setupProjectForm() {
     const projectForm = document. getElementById('projectForm');
@@ -117,6 +126,9 @@ function setupProjectForm() {
         });
     }
 }
+
+
+
 
 // ============== CLIENT FORM ==============
 function setupClientForm() {
@@ -155,6 +167,9 @@ function setupClientForm() {
     }
 }
 
+
+
+
 // ============== LOAD PROJECTS ==============
 function loadProjects() {
     const projectsTable = document.getElementById('projectsTable');
@@ -183,6 +198,9 @@ function loadProjects() {
             projectsTable.innerHTML = '<tr><td colspan="3" class="loading">Error loading projects</td></tr>';
         });
 }
+
+
+
 
 // ============== LOAD CLIENTS ==============
 function loadClients() {
@@ -213,6 +231,9 @@ function loadClients() {
             clientsTable.innerHTML = '<tr><td colspan="4" class="loading">Error loading clients</td></tr>';
         });
 }
+
+
+
 
 // ============== LOAD CONTACTS ==============
 function loadContacts() {
@@ -245,6 +266,10 @@ function loadContacts() {
         });
 }
 
+
+
+
+
 // ============== LOAD NEWSLETTERS ==============
 function loadNewsletters() {
     const newsletterTable = document.getElementById('newsletterTable');
@@ -273,6 +298,9 @@ function loadNewsletters() {
             newsletterTable.innerHTML = '<tr><td colspan="3" class="loading">Error loading newsletters</td></tr>';
         });
 }
+
+
+
 
 // ============== DELETE FUNCTIONS ==============
 function deleteProject(id) {
@@ -314,6 +342,10 @@ function deleteNewsletter(id) {
         .catch(error => console.error('Error:', error));
     }
 }
+
+
+
+
 
 // ============== HELPER FUNCTION ==============
 function showMessage(elementId, text, className) {
